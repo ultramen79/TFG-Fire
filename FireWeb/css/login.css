@@ -1,0 +1,154 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Helvetica','Arial','Verdana';
+}
+html,body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1 100%;
+	min-width: 200px;
+	width: 100%;
+	font-size: 100%;
+}
+header{
+background-color: white;
+flex-grow: 2;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+min-width: 200px;
+min-height: 20%;
+max-height: 200px;
+}
+img{
+  padding: 10px;
+  max-height: 200px;
+  max-width: 200px;
+}
+.contenedor{
+	background-color: red;
+	flex-grow: 8;
+	flex-shrink: 1;
+	display: flex;
+	justify-content: center;
+	min-width: 200px;
+	width: 100%;
+}
+
+.formulario{
+    min-height:200px;
+    min-width: 200px;
+    padding: 5px;
+    width: 500px;
+    height: 100%;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.formulario h2{
+    margin: 25px auto;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+label{
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+input{
+      outline: none;
+}
+.inputGroup{
+  display: flex;
+  flex-direction: row;
+}
+span{
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+input[type="text"],input[type="password"]{
+    margin-top: 20px;
+    height: 30px;
+    background-color: red;
+    border-bottom: 3px solid yellow;
+    color: white;
+    min-width: 200px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 5px;
+}
+input::placeholder{
+	color: rgba(255,255,255,0.5)
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+  border-bottom: 1px solid yellow;
+}
+input[type="text"]:-webkit-autofill,input[type="password"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px red inset;
+    -webkit-text-fill-color: white;
+}
+input[type="text"]:-moz-autofill,input[type="password"]:-moz-autofill{
+  -moz-box-shadow: 0 0 0px 1000px red inset;
+  -moz-text-fill-color: white;
+}
+
+input[type="text"]:-moz-ui-invalid,input[type="password"]:-moz-ui-invalid{
+  box-shadow: none;
+}
+input[type="text"]:focus::-webkit-input-placeholder,input[type="password"]:focus::-webkit-input-placeholder{
+  font-size: .8em;
+}
+input[type="password"]:focus::-moz-placeholder,input[type="text"]:focus::-moz-placeholder {
+    font-size: .8em;
+}
+input:focus:required:invalid{
+  border-bottom: 1px solid red;
+  outline: none;
+}
+#submit{
+    background-color: yellow;
+    min-width: 70px;
+    width: 120px;
+    height: 47px;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    color: white;
+    /*box-shadow: 1px 1px 5px rgba(0,0,0,0.4);*/
+}
+#submit:hover{
+    cursor: pointer;
+}
+#submit:active{
+  transform: scale(.98);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+}
+.error{
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  background-color:#ef5350;
+  border-radius: 20px;
+  padding: 10px;
+}
